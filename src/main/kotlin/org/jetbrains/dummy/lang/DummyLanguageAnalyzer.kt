@@ -5,8 +5,7 @@ import java.io.OutputStream
 class DummyLanguageAnalyzer(outputStream: OutputStream) {
     companion object {
         private val CHECKERS: List<(DiagnosticReporter) -> AbstractChecker> = listOf(
-            ::VariableInitializationChecker,
-            ::FunctionDeclarationChecker
+            ::VariableInitializationChecker
         )
     }
 
