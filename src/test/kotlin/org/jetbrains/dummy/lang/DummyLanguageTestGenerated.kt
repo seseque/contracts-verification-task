@@ -9,6 +9,11 @@ class DummyLanguageTestGenerated : AbstractDummyLanguageTest() {
     }
     
     @Test
+    fun testFuncBad() {
+        doTest("testData/funcBad.dummy")
+    }
+    
+    @Test
     fun testGood() {
         doTest("testData/good.dummy")
     }

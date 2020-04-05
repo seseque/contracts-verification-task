@@ -28,6 +28,6 @@ class VariableInitializationChecker(private val reporter: DiagnosticReporter) : 
     }
 
     private fun reportUndefinedFunctionCall(call: FunctionCall) {
-        reporter.report(call, "Call of undefined function '${call.function}' ")
+        reporter.report(call, "Call of undefined function '${call.function}'")
     }
 }
